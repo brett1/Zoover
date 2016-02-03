@@ -22,7 +22,9 @@ var CommentBox = React.createClass({
     render: function() {
         return (
             <div className="commentBox">
-                <h3>Comments:</h3>
+                <h1>Welcome to Zoover. </h1>
+                <br />
+                <h2>Here's what's going on right now</h2>
                 <CommentList comments={this.state.comments}/>
                 <CommentForm submitComment={this.submitComment}/>
             </div>
@@ -62,12 +64,12 @@ var CommentForm = React.createClass({
         var text = this.refs.text.getDOMNode().value.trim();
         var comment = { author: author, text: text };
         var submitButton = this.refs.submitButton.getDOMNode();
-        submitButton.innerHTML = 'Posting comment...';
+        submitButton.innerHTML = 'Zooving...';
         submitButton.setAttribute('disabled', 'disabled');
         this.props.submitComment(comment, function (err) {
             that.refs.author.getDOMNode().value = '';
             that.refs.text.getDOMNode().value = '';
-            submitButton.innerHTML = 'Post comment';
+            submitButton.innerHTML = 'Zoov!';
             submitButton.removeAttribute('disabled');
         });
     },
@@ -75,8 +77,8 @@ var CommentForm = React.createClass({
         return (
             <form className="commentForm" onSubmit={this.handleSubmit}>
                 <input type="text" name="author" ref="author" placeholder="Name" required /><br/>
-                <textarea name="text" ref="text" placeholder="Comment" required></textarea><br/>
-                <button type="submit" ref="submitButton">Post comment</button>
+                <textarea name="text" ref="text" placeholder="Zoover" required></textarea><br/>
+                <button type="submit" ref="submitButton">Zoov!</button>
             </form>
         );
     }
