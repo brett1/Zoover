@@ -20,7 +20,7 @@ var sendComments = function (socket) {
 };
 
 io.on('connection', function (socket) {
-    console.log('New client connected!');
+    console.log('New visitor detected!');
 
     socket.on('fetchComments', function () {
         sendComments(socket);

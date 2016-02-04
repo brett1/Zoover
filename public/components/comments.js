@@ -22,9 +22,9 @@ var CommentBox = React.createClass({
     render: function() {
         return (
             <div className="commentBox">
-                <h1>Welcome to Zoover. </h1>
+                <h1>Zoover Activity</h1>
                 <br />
-                <h2>Here's what's going on right now</h2>
+                <h2>Here's what's going on right now.</h2>
                 <CommentList comments={this.state.comments}/>
                 <CommentForm submitComment={this.submitComment}/>
             </div>
@@ -33,7 +33,7 @@ var CommentBox = React.createClass({
 });
 var CommentList = React.createClass({
     render: function () {
-        var Comments = (<div>Loading comments...</div>);
+        var Comments = (<div>Loading Zoover...</div>);
         if (this.props.comments) {
             Comments = this.props.comments.map(function (comment) {
                 return (<Comment comment={comment} />);
@@ -79,6 +79,7 @@ var CommentForm = React.createClass({
                 <input type="text" name="author" ref="author" placeholder="Name" required /><br/>
                 <textarea name="text" ref="text" placeholder="Zoover" required></textarea><br/>
                 <button type="submit" ref="submitButton">Zoov!</button>
+                
             </form>
         );
     }

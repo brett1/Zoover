@@ -14,5 +14,9 @@
     {
         "author": "javathunderman",
         "text": "Welcome to Zoover!"
+    },
+    {
+        "author": "Test",
+        "text": "To make sure this still works..."
     }
 ]

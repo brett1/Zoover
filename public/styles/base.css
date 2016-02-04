@@ -1,12 +1,12 @@
 body {
-    background: #ddd;
+    background: #333;
     padding: 0;
     margin: 0;
     font-family: 'Open Sans', sans-serif;
 }
 
 #content {
-    background: white;
+    background: #333;
     padding: 50px;
     width: 600px;
     margin: auto;
@@ -33,4 +33,7 @@ body {
     margin-bottom: 5px;
     border: 1px #ddd solid;
     padding: 5px;
+    
+    
+
 }

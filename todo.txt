@@ -1,3 +1,5 @@
-1. NavBar
-2. About page
-3. Landing page
+1. NavBar (bad idea)
+2. About page (done)
+3. Landing page (done)
+4. Login systems
+5. Communities
