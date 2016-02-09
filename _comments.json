@@ -18,5 +18,9 @@
     {
         "author": "Test",
         "text": "To make sure this still works..."
+    },
+    {
+        "author": "Test",
+        "text": "asdf"
     }
 ]

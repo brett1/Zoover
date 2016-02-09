@@ -1,0 +1,11 @@
+{
+
+  "commands": {
+      "Boot up server": "npm start"
+      
+  },
+
+  "preview": {
+      "Preview": "http://{{domain}}:5000/"
+  }
+}

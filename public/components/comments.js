@@ -79,7 +79,6 @@ var CommentForm = React.createClass({
                 <input type="text" name="author" ref="author" placeholder="Name" required /><br/>
                 <textarea name="text" ref="text" placeholder="Zoover" required></textarea><br/>
                 <button type="submit" ref="submitButton">Zoov!</button>
-                
             </form>
         );
     }
