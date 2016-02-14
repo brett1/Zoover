@@ -1,7 +1,7 @@
 1. NavBar (bad idea)
 2. About page (done)
 3. Landing page (done)
-4. Login systems
-5. Communities
+4. Login systems http://passportjs.org/docs
+5. Communities (bad idea)
 6. Documentation
 7. Add antispam

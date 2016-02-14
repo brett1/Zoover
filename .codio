@@ -6,6 +6,6 @@
   },
 
   "preview": {
-      "Preview": "http://{{domain}}:5000/"
+      "Preview": "http://{{domain}}:3000/"
   }
 }
