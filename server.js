@@ -18,6 +18,31 @@ var sendComments = function (socket) {
         socket.emit('comments', comments);
     });
 };
+var passport = require('passport');
+
+
+var strategy = require('./setup-passport');
+
+// Session and cookies middlewares to keep user logged in
+var cookieParser = require('cookie-parser');
+var session = require('express-session');
+
+
+app.use(cookieParser());
+// See express session docs for information on the options: https://github.com/expressjs/session
+app.use(session({ secret: 'keyboard cat', resave: false,  saveUninitialized: false }));
+app.use(passport.initialize());
+app.use(passport.session());
+
+// Auth0 callback handler
+app.get('/callback',
+  passport.authenticate('auth0', { failureRedirect: '/index.html' }),
+  function(req, res) {
+    if (!req.user) {
+      throw new Error('user null');
+    }
+    res.redirect("/activity.html");
+  });
 
 io.on('connection', function (socket) {
     console.log('New visitor detected!');

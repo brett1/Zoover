@@ -1,0 +1,29 @@
+<!--
+To change this template use Tools | Templates.
+-->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title></title>
+</head>
+<body>
+<script src="https://cdn.auth0.com/js/lock-8.2.min.js"></script>
+<script type="text/javascript">
+  
+  var lock = new Auth0Lock('e6RroHpjwIETB0wgw9DrW7r8wN05139S', 'emposoft.auth0.com');
+  
+  
+  function signin() {
+    lock.show({
+        callbackURL: 'http://heroic-agent.codio.io:5000/activity.html'
+      , responseType: 'code'
+      , authParams: {
+        scope: 'openid profile'
+      }
+    });
+  }
+</script>
+<button onclick="window.signin();">Login</button>
+</body>
+</html>
