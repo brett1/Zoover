@@ -4,7 +4,7 @@ var Auth0Strategy = require('passport-auth0');
 var strategy = new Auth0Strategy({
     domain:       'emposoft.auth0.com',
     clientID:     'e6RroHpjwIETB0wgw9DrW7r8wN05139S',
-    clientSecret: 'LEaNa0CMkpGc8KqhUlHHf-9FtFRKAMTiMA0_N3Ug6uVPyA5Xv5izwfFx25wanFeC',
+    clientSecret: 'lolyulookhere',
     callbackURL:  '/callback'
   }, function(accessToken, refreshToken, extraParams, profile, done) {
     // accessToken is the token to call Auth0 API (not needed in the most cases)
