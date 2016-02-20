@@ -1,26 +1,19 @@
-[
-    {
-        "author": "Thomas Denizou",
-        "text": "Hello World!"
-    },
-    {
-        "author": "javathunderman",
-        "text": "I'm YOU! >_>"
-    },
-    {
-        "author": "Test",
-        "text": "Hello World!"
-    },
-    {
-        "author": "javathunderman",
-        "text": "Welcome to Zoover!"
-    },
-    {
-        "author": "Test",
-        "text": "To make sure this still works..."
-    },
-    {
-        "author": "Test",
-        "text": "asdf"
-    }
-]
+[{
+    "author": "Thomas Denizou",
+    "text": "Hello World!"
+}, {
+    "author": "javathunderman",
+    "text": "I'm YOU! >_>"
+}, {
+    "author": "Test",
+    "text": "Hello World!"
+}, {
+    "author": "javathunderman",
+    "text": "Welcome to Zoover!"
+}, {
+    "author": "Test",
+    "text": "To make sure this still works..."
+}, {
+    "author": "Test",
+    "text": "asdf"
+}]
